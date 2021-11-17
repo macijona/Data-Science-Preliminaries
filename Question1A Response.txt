@@ -1,0 +1,7 @@
+Question 1 Answer: Query to use is
+SELECT name_table.StudentID, name_table.Name FROM name_table, mark_table
+WHERE  name_table.StudentID = mark_table.StudentID AND mark_table.Total_marks > (
+        SELECT mark_table.Total_marks FROM name_table, mark_table
+        WHERE name_table.StudentID = mark_table.StudentID  AND name_table.StudentID = 'V002');
+
+main.sql file that is provided is the sql code that can show this in action

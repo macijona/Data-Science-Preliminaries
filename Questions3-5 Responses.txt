@@ -1,0 +1,18 @@
+Question 3: If you were asked to impute null values in a column of a file that was 365 Gigabytes, what would you do?  What tools would you use?  What tools would you NOT use?
+    Rather than reading the file and attempting to rectify the null values through python, I would attempt to import the files into a database and create a procedure to 
+        rectify all values depending on the type of variable and amount of null values present in the variable.
+    If the variable is a numerical, I would alter the null value to be a central value of the variable, such as the variable average or median.
+    If the variable is categorical, I would alter the null value to the most frequently chosen value.
+    If the variable is free-form (text) or there are not many records with missing values, I would simply discard the records. This is especcialy true if the amount of
+        records to discard are tiny relative to the sheer amount of records in the file.
+
+
+Quesiton 4:	What would you do if you were asked to do the above task every Thursday morning at 2:00am?
+    If I was asked to do the above task every week, I would ask for the task to be rotated amongst the team every week. 
+    If that was declined then I would kindly decline and ask to be given another task.
+
+Quesiton 5: Who is your favorite mathematician, statistician or computer scientist and why?
+    My favorite computer scientists is Edsger W. Dijkstra due to his vast contributions to computer science.
+    I have heard his name for years accross many subdisciplines in computer science, and there is no doubt that his research has led to this computer dominated world.
+    Some contributions are: Dijkstra's shortest path algorithm, one of the first programming langauges (ALGOL), solving the famed concurrency deadlock problem,
+        and the paradigm of structured programming
